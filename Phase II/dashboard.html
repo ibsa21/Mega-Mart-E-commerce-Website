@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seller Dashboard</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <b></b>
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <img src="./img/logo.png" class="logo" alt="">
+      <h3 class="hide">MegaMart</h3>
+    </div>
+
+    <div class="search">
+      <i class='bx bx-search'></i>
+      <input type="text" class="hide" placeholder="Quick Search ...">
+    </div>
+
+    <div class="sidebar-links">
+      <ul>
+        <div class="active-tab"></div>
+
+        <!-- Dashboard sidebar link -->
+        <li class="list-element" data-tooltip="0">
+          <a href="#" class="active  tab-button" data-active="0">
+            <div class="icon">
+              <i class='bx bx-tachometer'></i>
+              <i class='bx bxs-tachometer'></i>
+            </div>
+            <span class="link hide">Dashboard</span>
+          </a>
+        </li>
+        <!-- End of dashboard sidebar link 2 -->
+
+        <!-- product sidebar -->
+        <li class="list-element" data-tooltip="1">
+          <a href="#" class="tab-button" data-active="1">
+            <div class="icon">
+              <i class='bx bx-folder'></i>
+              <i class='bx bxs-folder'></i>
+            </div>
+            <span class="link hide">Products</span>
+          </a>
+        </li>
+        <!-- End of product sidebar -->
+
+        <!-- Order Sidebar -->
+        <li class="list-element" data-tooltip="2">
+          <a href="#" class="tab-button" data-active="2">
+            <div class="icon">
+              <i class='bx bx-folder'></i>
+              <i class='bx bxs-folder'></i>
+            </div>
+            <span class="link hide">Order</span>
+          </a>
+        </li>
+        <!-- End of order sidebar -->
+
+        <!-- Messages sidebar -->
+        <li class="list-element" data-tooltip="3">
+          <a href="#" class="tab-button" data-active="3">
+            <div class="icon">
+              <i class='bx bx-message-square-detail'></i>
+              <i class='bx bxs-message-square-detail'></i>
+            </div>
+            <span class="link hide">Messages</span>
+          </a>
+        </li>
+        <!-- End of messages sidebar -->
+
+        <!-- Analytics sidebar -->
+        <li class="list-element" data-tooltip="4">
+          <a href="#" class="tab-button" data-active="4">
+            <div class="icon">
+              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bxs-bar-chart-square'></i>
+            </div>
+            <span class="link hide">Analytics</span>
+          </a>
+        </li>
+        <!-- End of analytics sidebar -->
+        <!-- Analytics sidebar -->
+        <li class="list-element" data-tooltip="5">
+          <a href="#" class="tab-button" data-active="5">
+            <div class="icon">
+              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bxs-bar-chart-square'></i>
+            </div>
+            <span class="link hide">Settings</span>
+          </a>
+        </li>
+        <!-- End of analytics sidebar -->
+        <!-- Analytics sidebar -->
+        <li class="list-element" data-tooltip="6">
+          <a href="#" class="tab-button" data-active="6">
+            <div class="icon">
+              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bxs-bar-chart-square'></i>
+            </div>
+            <span class="link hide">Settings</span>
+          </a>
+        </li>
+        <!-- End of analytics sidebar -->
+        <!-- Analytics sidebar -->
+
+      </ul>
+    </div>
+    <div class="sidebar-footer">
+
+    </div>
+  </nav>
+
+  <main id="main-section">
+
+    <div class="admin-user">
+      <div class="menu" id="menu">
+        <i class='bx bx-menu'></i>
+      </div>
+      <div class="search search-second">
+        <i class='bx bx-search'></i>
+        <input type="text" class="hide" placeholder="Quick Search ...">
+      </div>
+      <div class="admin-profile">
+        <img src="img/IbsaPic.jpg" alt="">
+        <ul>
+          <li><a href="">profile</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <!-- Start of dashboard container -->
+      <div class="dashboard-container" data-tab = "0" id="zero">
+
+        <!-- dashboard child 1==> header -->
+        <div class="dash-header">
+          <h1>My Dashboard</h1>
+          <a href="#">Create Report</a>
+        </div>
+
+        <!-- dashboard child-2==> information-container  -->
+        <div class="info-container">
+          <div class="sales-total info">
+            <img src="img/global.png" alt="">
+            <p>Total Sales <small>$20,000</small> </p>
+          </div>
+          <div class="order-total info">
+            <img src="img/global.png" alt="">
+            <p>Total Sales <small>$25,000</small> </p>
+          </div>
+
+          <div class="product-total info">
+            <img src="img/global.png" alt="">
+            <p>Total Sales <small>$25,000</small> </p>
+          </div>
+        </div>
+
+        <!-- dashboard child 3==> sales statistics -->
+        <div class="statistics-container">
+          <h1>Sale statistics</h1>
+          <div class="statistics">
+            <div class="day-month-container">
+              <div class="daily-sales sales-info">
+                <h2>Today's Sales</h2>
+                <ul>
+                  <li>
+                    Sales
+                    <small class="sales-price">$25,000</small>
+                  </li>
+                  <li>
+                    Units
+                    <small class="unit-sold">100</small>
+                  </li>
+                  <li>
+                    Esimated Cost
+                    <small class="estimated-cost">
+                      $5,000
+                    </small>
+                  </li>
+                  <li>
+                    Net Profit
+                    <small class="net-profit">$20,000</small>
+                  </li>
+                  </ol>
+              </div>
+              <div class="monthly-sales sales-info">
+                <h2>Today's Sales</h2>
+                <ul>
+                  <li>
+                    Sales
+                    <small class="sales-price">$25,000</small>
+                  </li>
+                  <li>
+                    Units
+                    <small class="unit-sold">100</small>
+                  </li>
+                  <li>
+                    Esimated Cost
+                    <small class="estimated-cost">
+                      $5,000
+                    </small>
+                  </li>
+                  <li>
+                    Net Profit
+                    <small class="net-profit">$20,000</small>
+                  </li>
+                  </ol>
+              </div>
+            </div>
+            <div class="year-sales sales-info">
+              <h2>Today's Sales</h2>
+              <ul>
+                <li>
+                  Sales
+                  <small class="sales-price">$25,000</small>
+                </li>
+                <li>
+                  Units
+                  <small class="unit-sold">100</small>
+                </li>
+                <li>
+                  Esimated Cost
+                  <small class="estimated-cost">
+                    $5,000
+                  </small>
+                </li>
+                <li>
+                  Net Profit
+                  <small class="net-profit">$20,000</small>
+                </li>
+                </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of dashboard container -->
+
+      <!-- Order section -->
+      <section class="order" data-tab = "1" id="one">
+        <div class="search-order">
+          <h2>latest Orders</h2>
+          <div class="search search-second">
+            <i class='bx bx-search'></i>
+            <input type="text" class="hide" placeholder="Quick Search ...">
+          </div>
+
+          <div class="filter-container">
+            <div class="order-filter">
+              <select name="order-filter1" id="order-filter1">
+                <option value="status" selected>Status</option>
+                <option value="pending">Pending</option>
+                <option value="canceled">Cancelled</option>
+                <option value="recevied">Received</option>
+                <option value="showall">Show All</option>
+              </select>
+            </div>
+            <div class="order-filter filter-2">
+              <select name="order-filter2" id="order-filter2">
+                <option value="5">Show 5</option>
+                <option value="10">Show 10</option>
+                <option value="20">Show 20</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="order-table">
+          <div class="table-header">
+            <ul>
+              <div>
+                <li>#Order-ID</li>
+              </div>
+              <div>
+                <li>Price</li>
+              </div>
+              <div>
+                <li>Status</li>
+              </div>
+              <div>
+                <li>Date</li>
+              </div>
+              <div>
+                <li>name</li>
+              </div>
+              <div>
+                <li>Remark</li>
+              </div>
+              <div>
+                <li>Email</li>
+              </div>
+            </ul>
+          </div>
+          <div class="order-data">
+            <div class="data">
+              <ul>
+                <div>
+                  <p class="text-hide"> Order-ID: </p>
+                  <li><input type="checkbox"> 100</li>
+                </div>
+                <div>
+                  <p class="text-hide">Price: </p>
+                  <li>$100</li>
+                </div>
+                <div>
+                  <p class="text-hide">Status: </p>
+                  <li> pending</li>
+                </div>
+                <div>
+                  <p class="text-hide">Date: </p>
+                  <li> 1/23/2022</li>
+                </div>
+                <div>
+                  <p class="text-hide">Name: </p>
+                  <li> Ibsa Abraham</li>
+                </div>
+                <div>
+                  <p class="text-hide">Remark: </p>
+                  <li>waiting</li>
+                </div>
+                <div>
+                  <p class="text-hide">Email: </p>
+                  <li> ibsaabraham663@gmail.com</li>
+                </div>
+              </ul>
+            </div>
+            <div class="data">
+              <ul>
+                <div>
+                  <p class="text-hide"> Order-ID: </p>
+                  <li><input type="checkbox"> 100</li>
+                </div>
+                <div>
+                  <p class="text-hide">Price: </p>
+                  <li>$100</li>
+                </div>
+                <div>
+                  <p class="text-hide">Status: </p>
+                  <li> pending</li>
+                </div>
+                <div>
+                  <p class="text-hide">Date: </p>
+                  <li> 1/23/2022</li>
+                </div>
+                <div>
+                  <p class="text-hide">Name: </p>
+                  <li> Ibsa Abraham</li>
+                </div>
+                <div>
+                  <p class="text-hide">Remark: </p>
+                  <li>waiting</li>
+                </div>
+                <div>
+                  <p class="text-hide">Email: </p>
+                  <li> ibsaabraham663@gmail.com</li>
+                </div>
+              </ul>
+            </div>
+            <div class="data">
+              <ul>
+                <div>
+                  <p class="text-hide"> Order-ID: </p>
+                  <li><input type="checkbox"> 100</li>
+                </div>
+                <div>
+                  <p class="text-hide">Price: </p>
+                  <li>$100</li>
+                </div>
+                <div>
+                  <p class="text-hide">Status: </p>
+                  <li> pending</li>
+                </div>
+                <div>
+                  <p class="text-hide">Date: </p>
+                  <li> 1/23/2022</li>
+                </div>
+                <div>
+                  <p class="text-hide">Name: </p>
+                  <li> Ibsa Abraham</li>
+                </div>
+                <div>
+                  <p class="text-hide">Remark: </p>
+                  <li>waiting</li>
+                </div>
+                <div>
+                  <p class="text-hide">Email: </p>
+                  <li> ibsaabraham663@gmail.com</li>
+                </div>
+              </ul>
+            </div>
+            <div class="data">
+              <ul>
+                <div>
+                  <p class="text-hide"> Order-ID: </p>
+                  <li><input type="checkbox"> 100</li>
+                </div>
+                <div>
+                  <p class="text-hide">Price: </p>
+                  <li>$100</li>
+                </div>
+                <div>
+                  <p class="text-hide">Status: </p>
+                  <li> pending</li>
+                </div>
+                <div>
+                  <p class="text-hide">Date: </p>
+                  <li> 1/23/2022</li>
+                </div>
+                <div>
+                  <p class="text-hide">Name: </p>
+                  <li> Ibsa Abraham</li>
+                </div>
+                <div>
+                  <p class="text-hide">Remark: </p>
+                  <li>waiting</li>
+                </div>
+                <div>
+                  <p class="text-hide">Email: </p>
+                  <li> ibsaabraham663@gmail.com</li>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Start of product list section -->
+      <section class="pr-list-container" data-tab = "2" id="two">
+        <div class="product-header">
+          <h1>Product Lists</h1>
+          <a href="#">Create New</a>
+        </div>
+        <div class="order">
+          <div class="search-order">
+            <h2>latest products</h2>
+            <div class="search search-second">
+              <i class='bx bx-search'></i>
+              <input type="text" class="hide" placeholder="Quick Search ...">
+            </div>
+
+            <div class="filter-container">
+              <div class="order-filter">
+                <select name="order-filter1" id="order-filter1">
+                  <option value="status" selected>Status</option>
+                  <option value="pending">Pending</option>
+                  <option value="canceled">Cancelled</option>
+                  <option value="recevied">Received</option>
+                  <option value="showall">Show All</option>
+                </select>
+              </div>
+              <div class="order-filter filter-2">
+                <select name="order-filter2" id="order-filter2">
+                  <option value="5">Show 5</option>
+                  <option value="10">Show 10</option>
+                  <option value="20">Show 20</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="order-table">
+            <div class="table-header">
+              <ul>
+                <div>
+                  <li><input type="checkbox">#ID</li>
+                </div>
+                <div>
+                  <li>Product</li>
+                </div>
+                <div>
+                  <li>Category</li>
+                </div>
+                <div>
+                  <li>Status</li>
+                </div>
+                <div>
+                  <li>Date</li>
+                </div>
+                <div>
+                  <li>Action</li>
+                </div>
+              </ul>
+            </div>
+            <div class="order-data">
+              <div class="data">
+                <ul>
+                  <div>
+                    <p class="text-hide"> Order-ID: </p>
+                    <li><input type="checkbox"> 100</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Price: </p>
+                    <li>$100</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Status: </p>
+                    <li> pending</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Date: </p>
+                    <li> 1/23/2022</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Name: </p>
+                    <li> Ibsa Abraham</li>
+                  </div>
+                  <div></div>
+                </ul>
+              </div>
+              <div class="data">
+                <ul>
+                  <div>
+                    <p class="text-hide"> Order-ID: </p>
+                    <li><input type="checkbox"> 100</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Price: </p>
+                    <li>$100</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Status: </p>
+                    <li> pending</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Date: </p>
+                    <li> 1/23/2022</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Name: </p>
+                    <li> Ibsa Abraham</li>
+                  </div>
+                  <div></div>
+                </ul>
+              </div>
+              <div class="data">
+                <ul>
+                  <div>
+                    <p class="text-hide"> Order-ID: </p>
+                    <li><input type="checkbox"> 100</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Price: </p>
+                    <li>$100</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Status: </p>
+                    <li> pending</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Date: </p>
+                    <li> 1/23/2022</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Name: </p>
+                    <li> Ibsa Abraham</li>
+                  </div>
+                  <div></div>
+                </ul>
+              </div>
+              <div class="data">
+                <ul>
+                  <div>
+                    <p class="text-hide"> Order-ID: </p>
+                    <li><input type="checkbox"> 100</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Price: </p>
+                    <li>$100</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Status: </p>
+                    <li> pending</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Date: </p>
+                    <li> 1/23/2022</li>
+                  </div>
+                  <div>
+                    <p class="text-hide">Name: </p>
+                    <li> Ibsa Abraham</li>
+                  </div>
+                  <div></div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of product list -->
+
+      <!-- Start of add product age -->
+      <section class="add-product" data-tab="3" id="three">
+        <div class="add-product-header">
+          <h2>Add Products</h2>
+          <a href="#">Discard</a>
+        </div>
+
+        <div class="container">
+          <form action="">
+
+            <div>
+              <label for="title">Product Title</label>
+              <input type="text" id="product-title">
+            </div>
+
+            <div>
+              <label for="Description">Full Description</label>
+              <textarea name="descrption" id="product-desc"></textarea>
+            </div>
+
+            <div>
+              <label for="Images">Images</label>
+              <input type="file" id="product-image">
+            </div>
+
+            <div>
+              <label for="Tags">Tags</label>
+              <input type="text" id="product-Tags">
+            </div>
+
+            <div class="sub-container">
+              <div>
+                <label for="title">Product Title</label>
+              <input type="text" id="product-title">
+              </div>
+
+              <div>
+                <label for="title">Product Title</label>
+              <input type="text" id="product-title">
+              </div>
+
+              <div>
+                <label for="title">Product Title</label>
+              <input type="text" id="product-title">
+              </div>
+
+              <div>
+                <label for="title">Product Title</label>
+              <input type="text" id="product-title">
+              </div>
+            </div>
+
+            <div class="publish">
+              <label for="checkbox">Publish</label>
+              <input type="checkbox" id="checkbx" name="Publish">
+            </div>
+
+            <input type="submit" value="Submit item">
+          </form>
+        </div>
+
+      </section>
+
+      <p class="copyright">
+        &copy; 2022 - <span>MegaMart</span> All Rights Reserved.
+      </p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
