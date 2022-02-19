@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>contact us page</title>
+        <meta charset= "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="contact.css">
+        <link rel="stylesheet" href="../header.css">
+       <script src="contact.js"></script>
+    </head>
+    <body>
+        <header id="myHeader">
+            <div class="logo">
+               <img src="../Images/newLogo.png" alt="">
+            </div>
+            <div class="nav">
+              <ul>
+                <li class="home"><a href="../seller.html">Home</a></li>
+                <li class="about"><a href="../AbouUs/abouthtml.html">About</a></li>
+                <li class="about"><a href="#">Contact</a></li>
+                <li class="news"><a href="../LoginSignUp/customerLogin.html" >Login</a></li>
+              </ul>
+            </div>
+          </header>
+
+        <section class="contact">
+            <div id="content">
+                <h2>Contact Us </h2><br />
+                <p>Trust is the most important currency that Megamart have.
+                This Contact form helps to reassure customers that there's someone listening to complaints and feedback.Making it easy for customers to contact us if something goes wrong can save a sale (and a customer) who's had a bad experience through a missing shipment or damaged product. Mistakes happen, and customers want to know that we'll be there to help when it does.
+                </p>
+            </div>
+            <div class="container">
+                <div  class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><img src="Images/icon/loc.png" alt="" height="30px"></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Addis Ababa,Ethiopia<br>Akaki Kality Subcity,<br>Kilinto area</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><img src="Images/icon/call.png" alt="" height="30px"></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+251 900 000 000</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><img src="Images/icon/email.png" alt="" height="30px"></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>megamartethiopia@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form name="myform"   onsubmit="return validateform()">
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="name" >
+                            <span id="spanning">Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="email" >
+                            <span id="spanning">Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea ></textarea>
+                            <span id="spanning">Your Message...</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit"  value="Send">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </body>        
+</html>
+    
