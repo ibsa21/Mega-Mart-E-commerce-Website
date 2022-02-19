@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mega mart customer Contact Phone 1Contact Phone 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="loginSignU_style.css">
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="../header.css">
+    <script type="module" src="customerLoginScript.js" defer></script>
+</head>
+
+<body>
+
+    <div class="header-container">
+        
+        <header id="myHeader">
+            <div class="logo">
+               <img src="../Images/newLog_white.png" alt="">
+            </div>
+            <div class="nav">
+              <ul>
+                <li class="home"><a href="../SellerHomePage/seller.html">Home</a></li>
+                <li class="about"><a href="../AbouUs/abouthtml.html">About</a></li>
+                <li class="contact"><a href="../contactUs/contaactus.html">Contact</a></li>
+                <li class="news"><a class="navigate_login">Login</a></li>
+              </ul>
+            </div>
+          </header>
+        <nav>
+
+            <div class="all-catagory nav-btn">
+                <!-- <a href="#">all category</a> -->
+                <span>All catagory</span>
+                <div class="icon">
+                    <i class="fas fa-angle-double-down"></i>
+                </div>
+            </div>
+            <div class="customer-btn nav-btn">
+
+                <i class="fas fa-headset"></i>
+                <span>support</span>
+            </div>
+            <div class="coupon-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+
+                <span>coupons</span>
+            </div>
+            <div class="help-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+
+                <span>help</span>
+            </div>
+            <div class="location-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+
+                <span>location</span>
+            </div>
+            <div class="currency-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-coins"></i>
+                </div>
+
+                <span>currency</span>
+            </div>
+            <div class="currency-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <span>Delivery</span>
+            </div>
+            <div class="currency-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <span>Blog</span>
+            </div>
+
+
+
+        </nav>
+    </div>
+
+    <div class="registration" id="registration">
+        <form autocomplete="on" id="signup_form" class="container" onsubmit="return false">
+            <h2>Customer Registration Form</h2>
+            <div class="tab">
+                <div class="box">
+                    <label for="fName">First Name</label>
+                    <input type="text" id="fName" name="fName" placeholder="Enter your first name"
+                        oninput="this.className = ''" />
+                </div>
+
+                <div class="box">
+                    <label for="lName">Last Name</label>
+                    <input type="text" id="lName" name="lName" placeholder="Enter your last name"
+                        oninput="this.className = ''" />
+                </div>
+
+                <div class="box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter a valid email"
+                        oninput="this.className = ''" />
+                </div>
+
+                <div class="box">
+                    <label for="mobNum">Phone Number</label>
+                    <input type="tel" id="mobNum" name="mobNum" placeholder="Enter your mobile number"
+                        oninput="this.className = ''" />
+                </div>
+            </div>
+
+            <div class="tab">
+                <div class="box">
+                    <label for="uName">User Name</label>
+                    <input type="text" id="uName" name="uName" placeholder="Enter your user name" pattern="[A-Za-z]{6,}"
+                        title="Use atleast 6 English alphabets" oninput="this.className = ''" />
+                </div>
+
+                <div class="box">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password"
+                        placeholder="Include at least one number, one uppercase and lowercase letter"
+                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                        title="Please include at least one number, one uppercase and lowercase letter"
+                        oninput="this.className = ''" />
+                </div>
+
+                <div class="box">
+                    <label for="password">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="password" placeholder="Confirm your password"
+                        oninput="this.className = ''" />
+                </div>
+
+            </div>
+            <input type="submit" id="form_submit" class="form-submit">
+            <div class="A_member">
+                Already a member? <a class="navigate_login" href="#">Login</a>
+            </div>
+
+
+            <div id="login">
+                <font face="arial">Already have an account?<a href="customer login.html">Login</a></a></font>
+            </div>
+            <div id="check">
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree">
+                    <font face="arial" size="3">I understand and agree with the <a href="#">Terms of use</a> and <a
+                            href="#"> Privacy Policy</a></font>
+                </label>
+            </div>
+        </form>
+    </div>
+
+    <div class="login-container" id="login-container">
+        <div class="container">
+            <h3>Customer Login</h3>
+            <form autocomplete="on" id="login_form">
+                <div class="box">
+                    <label for="userName">User Name</label>
+                    <input type="text" id="username_login" name="username" size="50%" placeholder="Username" required />
+                </div>
+    
+                <div class="box">
+                    <label for="password">Password</label>
+                    <input type="password" id="password_login" name="password" size="50%" placeholder="Password" required />
+                </div>
+                <div class="box">
+                    <input type="submit" value="Log in Here">
+                </div>
+    
+                <div class="remember">
+                    <label for="remember">Remember me</label>
+                    <input type="checkbox" id="remember_login" name="remember">
+                </div>
+                <div class="forget">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="notMember">
+                    Not a member? <a id="navigate_signup" href="#"> Signup </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social">
+            <div class="call">
+                <i class="fas fa-phone"></i>
+                <span>CALL US</span>
+                <p>+25199485769</p>
+            </div>
+            <div class="call">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>LOCATE US</span>
+                <p>Addis Ababa science and technology university</p>
+            </div>
+            <div class="call">
+                <i class="far fa-envelope-open"></i>
+                <span>SEND US EMAIL</span>
+                <p>store@megamart.com</p>
+            </div>
+
+        </div>
+        <div class="foot-bottom">
+            All righ reserved &copy; 2022. MEGAMART
+        </div>
+
+    </footer>
+</body>
