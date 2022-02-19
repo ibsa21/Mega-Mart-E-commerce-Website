@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEGA MART</title>
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css" type="text/css" />
+    <link rel="stylesheet" href="styles/catagory.css" type="text/css" />
+    <script src="./script/app.js" defer></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- Header top-->
+            <div class="header-top">
+                <div class="logo">
+                    <img src="images/logomart-bgremove.png" alt="logo of mega mart" id="logo" />
+                </div>
+                <div class="search">
+                    <input type="type" placeholder="Search..." id="search" list="productType" />
+                    <datalist name="" id="productType">
+                        <option value="cloth"></option>
+                        <option value="electronics"></option>
+                        <option value="game"></option>
+                        <option value="gate"></option>
+                        <option value="cake"></option>
+                        <option value="suit"></option>
+                        <option value="sport"></option>
+                    </datalist>
+                    <select name="list" id="drop-down">
+                        <optgroup label="sport">
+                            <option value="">football</option>
+                            <option value="">jersey</option>
+                            <option value="">tickets</option>
+                            <option value="">pictures</option>
+                            <option value="">pack</option>
+                        </optgroup>
+                        <optgroup label="health">
+                            <option value="">medicine</option>
+                            <option value="">vitamins</option>
+                            <option value="">supplements</option>
+                            <option value="">deit</option>
+                            <option value="">books</option>
+                        </optgroup>
+                        <optgroup label="cloth">
+                            <option value="">suit</option>
+                            <option value="">ladies</option>
+                            <option value="">gentlemen</option>
+                        </optgroup>
+                        <optgroup label="electronics">
+                            <option value="">phone</option>
+                            <option value="">tablet</option>
+                            <option value="">pc</option>
+                            <option value="">ipad</option>
+                            <option value="">gaming</option>
+                        </optgroup>
+                        <optgroup label="entertainment">
+                            <option value="">show</option>
+                            <option value="">movies</option>
+                            <option value="">tv series</option>
+                            <option value="">blockbuster</option>
+                            <option value="">comedey</option>
+                        </optgroup>
+                    </select>
+
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <!-- Header top right icons-->
+                <div class="signup">
+                    <div class="sign-up">
+                        <button> <span>Seller</span>
+                        </button>
+                        <button> <span>Sign up</span>
+                        </button>
+                    </div>
+                    <div class="cart-icon">
+                        <div class="cart-icon-number"></div>
+                        <i class="fa fa-shopping-cart" id="cartimg"></i>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <nav>
+
+            <div class="all-catagory nav-btn">
+                <!-- <a href="#">all category</a> -->
+                <span>All catagory</span>
+                <div class="icon">
+                    <i class="fas fa-angle-double-down"></i>
+                </div>
+            </div>
+            <div class="customer-btn nav-btn">
+
+                <i class="fas fa-headset"></i>
+                <span>support</span>
+            </div>
+            <div class="coupon-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+
+                <span>coupons</span>
+            </div>
+            <div class="help-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+
+                <span>help</span>
+            </div>
+            <div class="location-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+
+                <span>location</span>
+            </div>
+            <div class="currency-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-coins"></i>
+                </div>
+
+                <span>currency</span>
+            </div>
+            <div class="currency-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <span>Delivery</span>
+            </div>
+            <div class="currency-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <span>Blog</span>
+            </div>
+
+
+
+        </nav>
+        <main>
+            <h1>list of products</h1>
+            <div class="list-head">
+                <input type="text" placeholder="filter products here">
+                <select name="list" id="drop-down-2">
+                    <optgroup label="health">
+                        <option value="">books</option>
+                        <option value="">medicine</option>
+                        <option value="">vitamins</option>
+                        <option value="">supplements</option>
+                        <option value="">deit</option>
+                       
+                    </optgroup>
+                    <optgroup label="sport">
+                        <option value="">football</option>
+                        <option value="">jersey</option>
+                        <option value="">tickets</option>
+                        <option value="">pictures</option>
+                        <option value="">pack</option>
+                    </optgroup>
+                    <optgroup label="cloth">
+                        <option value="">suit</option>
+                        <option value="">ladies</option>
+                        <option value="">gentlemen</option>
+                    </optgroup>
+                    <optgroup label="electronics">
+                        <option value="">phone</option>
+                        <option value="">tablet</option>
+                        <option value="">pc</option>
+                        <option value="">ipad</option>
+                        <option value="">gaming</option>
+                    </optgroup>
+                    <optgroup label="entertainment">
+                        <option value="">show</option>
+                        <option value="">movies</option>
+                        <option value="">tv series</option>
+                        <option value="">blockbuster</option>
+                        <option value="">comedey</option>
+                    </optgroup>
+                </select>
+                <button>search</button>
+            </div>
+            <div class="product-listing">
+                <!-- <div class="listing-item">
+                    <picture class="product-img">
+                        <img src="./images/suit.jpg" alt="">
+                    </picture>
+                    <div class="details">
+                        <div class="product-name">
+                            <span>Ambassador</span>
+                        </div>
+                        <div class="product-make">
+                            <span>Cloth</span>
+                        </div>
+                        <div class="product-rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            4.5</div>
+                        <div class="product-price">
+                            <span>$499.99</span>
+                        </div>
+                    </div>
+                    <div class="buy-btn">
+                        <button><span class="add-cart">BUY NOW</span></button><br>
+                    </div>
+                </div> -->
+               
+            </div>
+
+    </div>
+    </main>
+    <footer>
+        <div class="subscription">
+            <div class="parent-wrapper">
+                <div class="subscribe-wrapper">
+                    <h4>SUBSCRIBE TO OUR NEWSLETTER and BLOG</h4>
+                    <input type="email" name="email" class="subscribe-input" placeholder="Your e-mail">
+                    <div class="submit-btn">SUBMIT</div>
+                </div>
+            </div>
+            <div class="sub-social">
+                <div class="story">
+                    <h2>MEGAMART</h2>
+                    <h4>our story</h4>
+                    <p>this project started as group prohject for internet programming course and we have grown to
+                        love our work and belive that we can solve the ecommerce problem in our country </p><br>
+                </div>
+                <div>
+                    <h4>You can find follow us on our social media for latest news</h4>
+                </div>
+                <div class="social-icons">
+                    <div class="facebook">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="linked-in">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="sub-social-icons">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                </div>
+
+
+                <!-- <i class="fas fa-camera"></i> -->
+
+
+            </div>
+
+        </div>
+        <div class="social">
+            <div class="call">
+                <i class="fas fa-phone"></i>
+                <span>CALL US</span>
+                <p>+25199485769</p>
+            </div>
+            <div class="call">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>LOCATE US</span>
+                <p>Addis Ababa science and technology university</p>
+            </div>
+            <div class="call">
+                <i class="far fa-envelope-open"></i>
+                <span>SEND US EMAIL</span>
+                <p>store@megamart.com</p>
+            </div>
+
+        </div>
+
+        <div class="grid-foot">
+            <div class="foot foot-1">
+                <div class="foot-head">
+                    help
+                </div>
+                <ul>
+                    <li>how to create account</li>
+                    <li>how to set a price </li>
+                    <li>community forum</li>
+                    <li>megamrt blog</li>
+                    <li>marketplace</li>
+                    <li>learn</li>
+                </ul>
+            </div>
+            <div class="foot foot-2">
+                <div class="foot-head">
+                    company
+                </div>
+                <ul>
+                    <li>privacy policy</li>
+                    <li>Terms of service</li>
+                    <li>cookie policy</li>
+                    <li>About us</li>
+                    <li>values</li>
+                    <li>legal</li>
+                </ul>
+            </div>
+            <div class="foot foot-3">
+                <div class="foot-head">
+                    services
+                </div>
+                <ul>
+                    <li>Advertise yoour product</li>
+                    <li>sell your products</li>
+                    <li>delivery</li>
+                    <li>shipping tracking</li>
+                    <li>lates business news</li>
+                    <li>GET a job</li>
+                </ul>
+            </div>
+            <div class="foot foot-4">
+                <div class="foot-head">
+                    Get started
+                </div>
+                <ul>
+                    <li>pricing</li>
+                    <li>resources</li>
+                    <li>opeinig account as a seller</li>
+                    <li>opeinig account as a user</li>
+                    <li>Referall programs</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="foot foot-5">
+                <div class="foot-head">
+                    payment information
+                </div>
+                <ul>
+                    <li>megamart Business Card</li>
+                    <li>telebirr</li>
+                    <li>CBE birr</li>
+                    <li>Amole</li>
+                    <li>coupons</li>
+                    <li>megamart currency converter</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="foot-bottom">
+            All righ reserved &copy; 2022. MEGAMART
+        </div>
+
+    </footer>
+
+    </div>
+    <!-- <script src="./script/home.js" defer></script> -->
+</body>
+
+</html>

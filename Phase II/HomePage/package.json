@@ -1,0 +1,23 @@
+{
+  "name": "megamart",
+  "version": "1.0.0",
+  "description": "it is an upcoming revolutionary site that will make an easy trade for our customers",
+  "main": "index.js",
+  "scripts": {
+    "start":"live-server --verbose",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaleab-kali/mega-mart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaleab-kali/mega-mart/issues"
+  },
+  "homepage": "https://github.com/kaleab-kali/mega-mart#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
