@@ -19,7 +19,8 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   background-color: #f8f9fa;
-  min-height: 100vh;
+  height: 100vh;
+  /* overflow-y: hidden; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,7 +36,9 @@ ul {
   list-style: none;
 }
 
-.bx-bg-shadow, main .admin-user, main .info-container .sales-total, main .info-container .order-total, main .info-container .product-total, main .statistics-container .statistics .day-month-container, main .statistics-container .statistics .year-sales, main .order, main .add-product .container {
+.bx-bg-shadow, .admin-user, .sales-total, .order-total, .product-total, 
+.day-month-container, .year-sales, .order, .add-product .container 
+{
   background-color: #fff;
   -webkit-box-shadow: 0 0.1rem 0.25rem #a7a5a5;
           box-shadow: 0 0.1rem 0.25rem #a7a5a5;
@@ -48,7 +51,7 @@ ul {
           box-shadow: 0.2rem 0.2rem var(--main-color-light), -0.2rem -0.2rem #ccc;
 }
 
-.bx-bg-shadow:hover, main .admin-user:hover, main .info-container .sales-total:hover, main .info-container .order-total:hover, main .info-container .product-total:hover, main .statistics-container .statistics .day-month-container:hover, main .statistics-container .statistics .year-sales:hover, main .order:hover, main .add-product .container:hover {
+.bx-bg-shadow:hover {
   border: none;
   -webkit-box-shadow: 0.2rem 0.2rem #f7444e, -0.2rem -0.2rem #ccc;
           box-shadow: 0.2rem 0.2rem #f7444e, -0.2rem -0.2rem #ccc;
@@ -321,7 +324,8 @@ main .copyright span {
   cursor: pointer;
 }
 
-.btn, main .dashboard-container .dash-header a, main .pr-list-container .product-header a, main .add-product a {
+.btn, .dash-header a, .product-header a, .add-product a 
+{
   background: #3498db;
   font-family: Arial;
   color: #ffffff;
@@ -332,7 +336,8 @@ main .copyright span {
   height: 40px;
 }
 
-.btn:hover, main .dashboard-container .dash-header a:hover, main .pr-list-container .product-header a:hover, main .add-product a:hover {
+.btn:hover, .dash-header a:hover, .product-header a:hover, .add-product a:hover 
+{
   background: #3cb0fd;
   cursor: pointer;
 }
@@ -359,7 +364,7 @@ main .copyright span {
           box-shadow: 0.1rem 0.1rem var(--main-color-light), -0.1rem -0.1rem #ccc;
 }
 
-.header-card, main .dashboard-container .dash-header, main .pr-list-container .product-header, main .add-product .add-product-header {
+.header-card, .dash-header, .product-header, .add-product-header {
   margin-top: 70px;
   width: 100%;
   display: -webkit-box;
@@ -450,7 +455,7 @@ main .info-container {
           justify-content: space-between;
 }
 
-main .info-container .sales-total, main .info-container .order-total, main .info-container .product-total {
+.sales-total, .order-total, .product-total {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,12 +463,12 @@ main .info-container .sales-total, main .info-container .order-total, main .info
   width: 32%;
 }
 
-main .info-container .sales-total img, main .info-container .order-total img, main .info-container .product-total img {
+.sales-total img, .order-total img, .product-total img {
   width: 50px;
   margin-right: 20px;
 }
 
-main .info-container .sales-total small, main .info-container .order-total small, main .info-container .product-total small {
+.sales-total small, .order-total small, .product-total small {
   display: block;
 }
 
@@ -488,21 +493,21 @@ main .statistics-container .statistics .day-month-container {
   width: 66%;
 }
 
-main .statistics-container .statistics .day-month-container .daily-sales {
+.daily-sales {
   width: 50%;
   color: black;
 }
 
-main .statistics-container .statistics .day-month-container .monthly-sales {
+.monthly-sales {
   margin-left: 20px;
   width: 50%;
 }
 
-main .statistics-container .statistics .daily-sales, main .statistics-container .statistics .monthly-sales, main .statistics-container .statistics .year-sales {
+.daily-sales, .monthly-sales, .year-sales {
   padding: 20px;
 }
 
-main .statistics-container .statistics .year-sales {
+.year-sales {
   margin-left: 20px;
   width: 32%;
   background-color: white;
@@ -511,10 +516,12 @@ main .statistics-container .statistics .year-sales {
 
 main .order {
   padding: 10px;
-  margin-top: 20px;
-  display: none;
+  margin-top: 100px;
+  /* display: none; */
 }
-
+main .product {
+  margin-top: 20px;
+}
 main .order .search-order {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -589,7 +596,7 @@ main .order .order-table .table-header {
 }
 
 main .pr-list-container {
-  display: none;
+  display: none !important;
 }
 
 main .pr-list-container .order-table ul div {
