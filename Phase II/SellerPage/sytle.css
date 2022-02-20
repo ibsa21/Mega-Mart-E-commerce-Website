@@ -726,6 +726,76 @@ main .add-product .publish {
   }
 }
 
+@media screen and (max-width: 993px) {
+  main {
+    margin-left: 0;
+  }
+  main .dashboard-container h1 {
+    font-size: 1.8rem;
+  }
+  main .info-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .info-container .info {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  main .sales-info, main .info {
+    text-align: center;
+  }
+  main .statistics-container {
+    width: 100%;
+  }
+  main .statistics-container .statistics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  main .statistics-container .statistics .day-month-container, 
+  main .statistics-container .statistics .year-sales {
+    width: 100%;
+    margin-left: 0;
+  }
+  main .statistics-container .statistics .day-month-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  main .statistics-container .statistics .day-month-container .monthly-sales, 
+  main .statistics-container .statistics .day-month-container .daily-sales {
+    margin-left: 0;
+    width: 100%;
+  }
+  main .statistics-container .statistics .sales-bx-add {
+    margin-bottom: 20px;
+    border: 1px solid red;
+  }
+  main .statistics-container .statistics .year-sales {
+    padding: 20px;
+  }
+  main .table-header {
+    display: none;
+  }
+  main .order .search {
+    width: 100%;
+  }
+  main .order .filter-container {
+    margin-top: 10px;
+    width: 100%;
+  }
+  main .order .order-filter {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
 .shrink nav {
   width: 5.4rem;
 }
@@ -745,4 +815,5 @@ main .add-product .publish {
 .shrink .sidebar-links h4 {
   height: 10px;
 }
+
 /*# sourceMappingURL=style.css.map */
