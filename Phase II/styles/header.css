@@ -8,6 +8,12 @@ header {
             justify-content: space-between;
   }
   
+  .menu {
+    display: none;
+    /* background-color: black; */
+    font-size: 2.2rem;
+    cursor: pointer;
+  }
   .logo img {
     height: 100px;
   }
@@ -44,6 +50,9 @@ header {
     cursor: pointer;
   }
   
+.toggle-display {
+  display: block;
+}
   @media screen and (min-width: 600px) {
     .nav li {
       width: 120px;
@@ -52,7 +61,7 @@ header {
       line-height: 50px;
       font-size: 1.4em;
     }
-    /* Option 1 - Display Inline */
+    
     .nav li {
       display: inline-block;
       margin-right: -4px;
@@ -60,6 +69,12 @@ header {
   }
   
   @media screen and (max-width: 600px) {
+    .menu {
+      display: block;
+    }
+    #myHeader {
+      display: none;
+    }
     header {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;

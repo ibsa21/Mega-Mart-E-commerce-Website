@@ -9,10 +9,16 @@
    <link rel="stylesheet" href="template.css">
    <link rel="stylesheet" href="../styles/header.css">
    <link rel="stylesheet" href="../styles/faq.css">
+   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
    <title>Sell on MegaMart</title>
 </head>
 
 <body>
+
+   <div class="menu" id="menu">
+      <i class='bx bx-menu'></i>
+    </div>
+    
    <header id="myHeader">
       <div class="logo">
          <img src="../Images/newLog_white.png" alt="">
@@ -258,6 +264,16 @@
        header.classList.remove("sticky");
      }
    }
+
+   const menu = document.getElementById("menu");
+   const Header = document.getElementById("myHeader")
+   
+   menu.addEventListener('click', ()=> {
+      if(Header.style.display=="none")
+         Header.style.display = "block"
+      else
+         Header.style.display = "none";
+   })
    </script>
 </body>
 
