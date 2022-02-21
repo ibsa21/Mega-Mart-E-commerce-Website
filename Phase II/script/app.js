@@ -8,6 +8,7 @@ function allEventListerns() {
   });
 }
 
+// loadJson
 function loadJSON() {
   fetch("product.json")
     .then((response) => response.json())
