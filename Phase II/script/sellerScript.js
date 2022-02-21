@@ -57,8 +57,7 @@ sellerLogin_form.addEventListener('submit', (e)=> {
 
     if (isFound)
      {
-      console.log("Correct Login information")
-      window.location.href ="http://127.0.0.1:5501/Seller%20Page/index.html";
+      window.location.href="http://127.0.0.1:5501/Phase%20II/SellerPage/index.html"
      }
   else
     console.log("Incorrect Login information")
