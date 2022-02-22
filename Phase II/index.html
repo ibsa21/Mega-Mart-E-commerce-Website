@@ -8,12 +8,14 @@
     <title>MEGA MART</title>
     <link rel="stylesheet" href="../styles/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles/home.css" type="text/css" />
-
+    <link rel="stylesheet" href="styles/cart.css">
 </head>
 
 <body>
-    <div class="container">
+    
+    <div class="container" id="container">
         <header>
             <!-- Header top-->
             <div class="header-top">
@@ -100,41 +102,41 @@
             <div class="customer-btn nav-btn">
 
                 <i class="fas fa-headset"></i>
-                <span>support</span>
+                <a href="Blog/coupons.html" style="color: white;"><span>couponss</span></a>
             </div>
             <div class="coupon-btn nav-btn">
                 <div class="icon">
                     <i class="fas fa-gift"></i>
                 </div>
 
-                <a href="../Blog/coupons.html"></a>
+                <a href="Blog/blog.html" style="color: white;"><span>seller</span></a>
             </div>
             <div class="help-btn nav-btn">
                 <div class="icon">
                     <i class="fas fa-question-circle"></i>
                 </div>
 
-                <span>help</span>
+                <a href="AbouUs/faq.html" style="color: white;"><span>FAQ</span></a>
             </div>
             <div class="location-btn nav-btn">
                 <div class="icon">
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
 
-                <span>location</span>
+                <a href="Blog/blog.html" style="color: white;"><span>location</span></a>
             </div>
             <div class="currency-btn nav-btn">
                 <div class="icon">
                     <i class="fas fa-coins"></i>
                 </div>
 
-                <a href="../SellerPage/index.html"></a>
+                <a href="Blog/blog.html" style="color: white;"><span>support</span></a>
             </div>
             <div class="currency-btn nav-btn">
                 <div class="icon">
                     <i class="fas fa-truck"></i>
                 </div>
-                <span>Delivery</span>
+                <a href="Blog/blog.html" style="color: white;"><span>Delivery</span></a>
             </div>
 
 
@@ -142,17 +144,21 @@
                 <div class="icon">
                     <i class="fas fa-newspaper"></i>
                 </div>
-                <a href="../Blog/blog-display.html">Blog</a>
+                <a href="Blog/blog.html" style="color: white;"><span>Blog</span></a>
             </div>
 
 
 
         </nav>
+        
         <main>
+
             <div class="banner">
                 <div class="product">
                 </div>
             </div>
+
+
             <div class="product-catagory">
                 <div class="catagory-head-top">
                     <h2 id="cat">Catagories</h2>
@@ -161,86 +167,73 @@
                         <span class="slide-icon">&#155;</span>
                     </p>
                 </div>
+
                 <div class="product-list-top">
                     <div class="product-detail-top">
                         <picture class="product-img">
                             <img src="Homepage/images/nokia.png" alt="">
                         </picture>
-                        <a href="#">
                             <div class="catagory-name">
-                                Electronics
+                                <a href="Homepage/catagory.html" >Electronics</a>
                             </div>
-                        </a>
                     </div>
                     <div class="product-detail-top">
                         <picture class="product-img">
                             <img src="Homepage/images/suit.jpg" alt="">
                         </picture>
-                        <a href="#">
-                            <div class="catagory-name">
-                                Cloth
-                            </div>
-                        </a>
+                        <div class="catagory-name">
+                            <a href="Homepage/catagory.html" >Cloth</a>
+                        </div>
 
                     </div>
                     <div class="product-detail-top">
                         <picture class="product-img">
                             <img src="Homepage/images/furniture1.jpg" alt="">
                         </picture>
-                        <a href="#">
-                            <div class="catagory-name">
-                                Furniture
-                            </div>
-                        </a>
+                        <div class="catagory-name">
+                            <a href="Homepage/catagory.html" >Furniture</a>
+                        </div>
 
                     </div>
                     <div class="product-detail-top">
                         <picture class="product-img">
                             <img src="Homepage/images/baby.jfif" alt="">
                         </picture>
-                        <a href="#">
-                            <div class="catagory-name">
-                                baby products
-                            </div>
-                        </a>
+                        <div class="catagory-name">
+                            <a href="Homepage/catagory.html" >Baby Products</a>
+                        </div>
 
                     </div>
                     <div class="product-detail-top">
                         <picture class="product-img">
                             <img src="Homepage/images/feature_3.png" alt="">
                         </picture>
-                        <a href="#">
-                            <div class="catagory-name">
-                                shoes
-                            </div>
-                        </a>
+                        <div class="catagory-name">
+                            <a href="Homepage/catagory.html" >Shoes</a>
+                        </div>
 
                     </div>
                     <div class="product-detail-top">
                         <picture class="product-img">
                             <img src="Homepage/images/watch.png" alt="">
                         </picture>
-                        <a href="#">
-                            <div class="catagory-name">
-                                watch
-                            </div>
-                        </a>
+                        <div class="catagory-name">
+                            <a href="Homepage/catagory.html" >Watch</a>
+                        </div>
 
                     </div>
                     <div class="product-detail-top">
                         <picture class="product-img">
                             <img src="Homepage/images/grocery.jfif" alt="">
                         </picture>
-                        <a href="#">
-                            <div class="catagory-name">
-                                Grocery
-                            </div>
-                        </a>
+                        <div class="catagory-name">
+                            <a href="Homepage/catagory.html" >Grocery</a>
+                        </div>
                     </div>
-
                 </div>
             </div>
             <div class="product-catagory">
+
                 <div class="catagory-head">
                     <h2 id="cat">Trending products</h2>
                     <p id="add">
@@ -248,6 +241,7 @@
                         <span class="slide-icon">&#155;</span>
                     </p>
                 </div>
+
                 <div class="product-list">
                     <div class="second">
                         <picture class="product-img">
@@ -272,7 +266,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -280,14 +275,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="second">
@@ -313,7 +301,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -321,14 +310,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="second">
@@ -354,7 +336,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -362,14 +345,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="second">
@@ -395,7 +371,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -403,14 +380,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="second">
@@ -436,7 +406,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -444,14 +415,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="second">
@@ -477,7 +441,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -485,14 +450,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="second">
@@ -518,7 +476,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -526,14 +485,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="second">
@@ -559,7 +511,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -567,14 +520,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="second">
@@ -600,7 +546,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -608,14 +555,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <!-- ************************************************* -->
@@ -642,7 +582,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -650,19 +591,13 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
 
                 </div>
             </div>
+
             <div class="product-catagory">
                 <div class="catagory-head">
                     <h2 id="cat">Recommendation</h2>
@@ -695,7 +630,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -703,14 +639,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="third">
@@ -736,7 +665,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -744,14 +674,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="third">
@@ -777,7 +700,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -785,14 +709,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="third">
@@ -818,7 +735,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -826,14 +744,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="third">
@@ -859,7 +770,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -867,14 +779,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="third">
@@ -900,7 +805,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -908,14 +814,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="third">
@@ -941,7 +840,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -949,14 +849,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="third">
@@ -982,7 +875,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -990,14 +884,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="third">
@@ -1023,7 +910,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -1031,14 +919,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <!-- ************************************************* -->
@@ -1065,7 +946,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -1073,14 +955,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
 
@@ -1118,7 +993,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -1126,14 +1002,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="fourth">
@@ -1159,7 +1028,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -1167,14 +1037,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="fourth">
@@ -1200,7 +1063,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -1208,14 +1072,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="fourth">
@@ -1241,7 +1098,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -1249,14 +1107,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="fourth">
@@ -1282,7 +1133,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -1290,14 +1142,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="fourth">
@@ -1323,7 +1168,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -1331,14 +1177,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="fourth">
@@ -1364,7 +1203,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -1372,14 +1212,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="fourth">
@@ -1405,7 +1238,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -1413,14 +1247,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <div class="fourth">
@@ -1446,7 +1273,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -1454,14 +1282,7 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
                     <!-- ************************************************* -->
@@ -1488,7 +1309,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
-                                4.5</div>
+                                4.5
+                            </div>
                             <div class="product-price">
                                 <span>$499.99</span>
                             </div>
@@ -1496,23 +1318,13 @@
 
                         </div>
                         <div class="buy-btn">
-                            <!-- <span id="add-cart"><i class="fa fa-shopping-cart"></i></span>      -->
-                            <!-- <button class="add-to-cart">
-                                <span class="icone"><i class="fa fa-shopping-cart"></i></span>
-                                <span class="text">ADD TO CART</span>
-                                
-                               
-                            </button> -->
-                            <button><span class="add-cart">BUY NOW</span></button><br>
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
                         </div>
                     </div>
 
                 </div>
             </div>
-
         </main>
-
-
         <footer>
             <div class="subscription">
                 <div class="parent-wrapper">
@@ -1650,7 +1462,128 @@
 
         </footer>
     </div>
+
+    <main class="cart" id="cart-summary">
+        <h1>Shopping Cart</h1>
+        <div class="shopping-cart">
+            
+            <div class="cart-list">
+                <div class="cart-item">
+                    <div class="cart-img">
+                        <img src="Homepage/images/1.png" alt="">
+                    </div>
+                    <div class="name-produc">normal watch</div>
+                    <div class="name-produc">accerssory</div>
+                    <div class="product-price">$500</div>
+
+                    <div class="cart-delete">
+                        <i class='bx bxs-message-square-x'></i>
+                    </div>
+
+                    
+                </div>
+                <div class="cart-item">
+                    <div class="cart-img">
+                        <img src="Homepage/images/2.png" alt="">
+                    </div>
+                    <div class="name-produc">digital watch</div>
+                    <div class="name-produc">accessory</div>
+                    <div class="product-price">$999</div>
+                    <div class="cart-delete">
+                        <i class='bx bxs-message-square-x'></i>
+                    </div>
+
+                    
+                </div>
+                <div class="total-item">
+                    <span>total: </span>
+                    <span class="value-total"> $1499</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <div class="cart-wrapper" id="cart-page">
+        
+        <div class="container">
+            <form action="">
+                <h1>
+                    <i class="fas fa-shipping-fast"></i>
+                    Shipping Details
+                </h1>
+                <div class="name">
+                    <div>
+                        <label for="f-name">First</label>
+                        <input type="text" name="f-name">
+                    </div>
+                    <div>
+                        <label for="l-name">Last</label>
+                        <input type="text" name="l-name">
+                    </div>
+                </div>
+                <div class="street">
+                    <label for="name">Street</label>
+                    <input type="text" name="address">
+                </div>
+                <div class="address-info">
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="city">
+                    </div>
+                    <div>
+                        <label for="state">State</label>
+                        <input type="text" name="state">
+                    </div>
+                    <div>
+                        <label for="zip">Zip</label>
+                        <input type="text" name="zip">
+                    </div>
+                </div>
+                <h1>
+                    <i class="far fa-credit-card"></i> Payment Information
+                </h1>
+                <div class="cc-num">
+                    <label for="card-num">Telebirr Number</label>
+                    <input type="text" name="card-num">
+                </div>
+                <div class="cc-info">
+                    <div>
+                        <label for="card-num">Account Holder Name</label>
+                        <input type="text" name="expire">
+                    </div>
+                    <div>
+                        <label for="card-num">Password</label>
+                        <input type="text" name="security">
+                    </div>
+                </div>
+                <div class="btns">
+                    <button>Purchase</button>
+                    <button id="back_toPurchase">Back to cart</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script src="../script/home.js"></script>
+    <script>
+        const button = document.querySelectorAll('.buy_now')
+        const container = document.getElementById('container')
+        const cart_container = document.getElementById('cart-page')
+        const back_button = document.getElementById('back_toPurchase')
+        const cart_summary = document.getElementById('cart-summary')
+
+        button.forEach((btn) => btn.addEventListener('click', () => {
+            cart_container.style.display = "flex";
+            container.style.display = "none";
+            cart_summary.style.display = "block"
+        }))
+
+        back_button.addEventListener('click', ()=> {
+            cart_container.style.display = "none";
+            cart_summary.style.display = "none";
+            container.style.display = "grid";
+        })
+    </script>
 </body>
 
 </html>

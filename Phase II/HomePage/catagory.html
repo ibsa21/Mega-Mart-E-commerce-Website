@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../styles/home.css" type="text/css" />
     <link rel="stylesheet" href="../styles/catagory.css" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <script src="../script/app.js" defer></script>
 
 </head>
@@ -153,13 +154,13 @@
 
 
         </nav>
+        
         <main>
             <h1>list of products</h1>
             <div class="list-head">
-                <input type="text" placeholder="filter products here">
                 <select name="list" id="drop-down-2">
                     <optgroup label="health">
-                        <option value="">books</option>
+                        <option value="" selected>books</option>
                         <option value="">medicine</option>
                         <option value="">vitamins</option>
                         <option value="">supplements</option>
@@ -193,7 +194,11 @@
                         <option value="">comedey</option>
                     </optgroup>
                 </select>
-                <button>search</button>
+                <input type="text" placeholder="filter products here">
+                <div class="search-btn">
+                    <i class='bx bx-search'></i>
+                </div>
+                <!-- <button>search</button> -->
             </div>
             <div class="product-listing">
                 <!-- <div class="listing-item">
@@ -222,7 +227,6 @@
                         <button><span class="add-cart">BUY NOW</span></button><br>
                     </div>
                 </div> -->
-               
             </div>
 
     </div>
