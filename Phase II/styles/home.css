@@ -36,11 +36,12 @@ body {
 .header-top {
   border-bottom: 1px solid rgb(116, 111, 111);
   background-color: rgb(63, 221, 221);
-  height: 8rem;
+  /* height: 8rem; */
   padding: 50px;
   /* width: 100%; */
   /* padding-left: 5px; */
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -243,6 +244,8 @@ i {
 ==========================================================*/
 main {
   margin-top: 5px;
+  /* background-color: red; */
+  overflow: hidden;
 }
 .banner {
   width: 100%;
@@ -253,6 +256,7 @@ main {
 }
 /* product section
 ==========================================================*/
+
 .catagory-head-top {
   display: flex;
   align-items: center;
@@ -270,8 +274,74 @@ main {
   margin: 10px auto;
   display: flex;
   width: 98%;
-	height: 180px;
+	/* height: 180px; */
   overflow: hidden;
+  padding: 10px;
+}
+
+@media only screen and (max-width:600px) {
+
+  body {
+    /* overflow-x: hidden; */
+  }
+  .search {
+    width: 100%;
+    padding-left: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  #search {
+    width: 45%;
+    margin-top: 0px;
+  }
+  .header-top {
+    padding: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-btn {
+    width: 100%;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .product-catagory {
+    flex-direction: column;
+  }
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .second {
+    height: 300px;
+    width: 80%;
+  }
+  .product-list-top {
+    /* background-color: #000;*/
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-detail-top {
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: black;
+  }
+  .reccomendation, .hot_deals {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
 }
 
 .product-list-top .product-img{
@@ -289,11 +359,11 @@ main {
 	height: 100%;
 	background: whitesmoke;
 	margin: 0 20px 0 0;
-	border-radius: 20px;
+	border-radius: 10px;
 	position: relative;
 	/* left: 0; */
 	transition: 0.5s;
-  border: 0.5px solid black;
+  /* border: 0.5px solid black; */
 }
 .catagory-name {
   display: flex;
@@ -336,7 +406,7 @@ main {
   margin: 10px auto;
   display: flex;
   width: 98%;
-	height: 300px;
+	/* height: 300px; */
   overflow: hidden;
 }
 .product-detail {
@@ -354,8 +424,8 @@ main {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  border: 0.5px solid black;
-  box-shadow: 5px 5px 5px rgb(161, 157, 157); */
+  border: 0.5px solid black; */
+  box-shadow: 0 0.1rem 0.25rem rgb(167, 165, 165);
 }
 .product-detail picture {
   width: 100%;
@@ -366,26 +436,28 @@ main {
 }
 .product-img img {
 	width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  /* border-top-left-radius: 20px; */
+  /* border-top-right-radius: 20px; */
 }
 .second {
   min-width: 14%;
-	height: 80%;
-	background: whitesmoke;
+	/* height: 80%; */
+	background:whitesmoke;
 	margin: 0 20px 0 0;
 	border-radius: 20px;
 	position: relative;
 	left: 0;
 	transition: 0.5s;
-  /* width: 170px;
-  height: 250px;
-  margin: 25px 50px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  border: 0.5px solid black;
-  box-shadow: 5px 5px 5px rgb(161, 157, 157); */
+  padding: 20px;
+  box-shadow: 0 0.1rem 0.25rem rgb(167, 165, 165);
+}
+.second:first-child, .third:first-child, .fourth:first-child {
+  margin-left: 10px;
+}
+.second, .third, .fourth {
+  box-shadow: 0 0.1rem 0.25rem rgb(167, 165, 165);
+  padding: 20px;
+  margin-bottom: 10px;
 }
 .second picture {
   width: 100%;
@@ -396,7 +468,7 @@ main {
 }
 .third {
   min-width: 14%;
-	height: 80%;
+	/* height: 80%; */
 	background: whitesmoke;
 	margin: 0 20px 0 0;
 	border-radius: 20px;
@@ -421,7 +493,7 @@ main {
 }
 .fourth {
   min-width: 14%;
-	height: 80%;
+	/* height: 80%; */
 	background: whitesmoke;
 	margin: 0 20px 0 0;
 	border-radius: 20px;
@@ -446,8 +518,8 @@ main {
 }
 .product-img img {
 	width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  /* border-top-left-radius: 20px; */
+  /* border-top-right-radius: 20px; */
 }
 .details {
   position: relative;
@@ -673,6 +745,7 @@ footer {
   }
 
 }
+
 a {
   color:darkslateblue;
 }

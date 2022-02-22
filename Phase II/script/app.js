@@ -40,7 +40,7 @@ function loadJSON() {
             </div>
         </div>
         <div class="buy-btn">
-            <button><span class="add-cart">BUY NOW</span></button><br>
+            <button class = "buy_now"><span class="add-cart">BUY NOW</span></button><br>
         </div>
     </div>
 

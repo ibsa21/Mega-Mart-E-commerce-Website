@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 main {
-    /* background: rgb(226, 239, 248); */
+    background-color: #f8f9fa;
+    /* background-color: rgb(236, 236, 236); */
 
 }
 main h1 {
@@ -32,16 +33,16 @@ main h1 {
     font-size: 25px;
     cursor: pointer;
 }
-.list-head input, #drop-down-2, button {
+.list-head input, button {
     padding: 20px;
     outline: none;
     border-radius: 5px;
     /* background-color: rgb(31 41 55); */
 }
-#drop-down-2 {
-    height: 2.25rem;
-    color:rgb(21, 207, 207);
-  }
+.drop-down {
+    padding: 12px;
+    border-radius: 5px;
+}
 .product-listing {
    padding: 50px;
    display: flex;
@@ -55,6 +56,7 @@ main h1 {
      border-radius: 7px; 
      width: 24%;
      margin-bottom: 10px;
+     background-color: white;
 }
 .product-img {
    margin: 0 auto;
@@ -66,4 +68,15 @@ main h1 {
     width: 70%;
     position: relative;
     left: 15%;
+ }
+
+ .buy-btn button {
+     height: 7px;
+     border: none;
+     text-align: center;
+ }
+
+ .buy-btn button:hover {
+     background-color: cornflowerblue;
+     cursor: pointer;
  }

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../styles/catagory.css" type="text/css" />
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <script src="../script/app.js" defer></script>
+    <link rel="stylesheet" href="../styles/cart.css">
 
 </head>
 
@@ -154,18 +155,18 @@
 
 
         </nav>
-        
+
         <main>
             <h1>list of products</h1>
             <div class="list-head">
-                <select name="list" id="drop-down-2">
+                <select class="drop-down">
                     <optgroup label="health">
-                        <option value="" selected>books</option>
+                        <option value="books" selected>books</option>
                         <option value="">medicine</option>
                         <option value="">vitamins</option>
                         <option value="">supplements</option>
                         <option value="">deit</option>
-                       
+
                     </optgroup>
                     <optgroup label="sport">
                         <option value="">football</option>
@@ -200,7 +201,7 @@
                 </div>
                 <!-- <button>search</button> -->
             </div>
-            <div class="product-listing">
+            <div class="product-listing" id="product_listing">
                 <!-- <div class="listing-item">
                     <picture class="product-img">
                         <img src="./images/suit.jpg" alt="">
@@ -367,9 +368,116 @@
         </div>
 
     </footer>
-
     </div>
-    <!-- <script src="./script/home.js" defer></script> -->
+
+    <main class="cart" id="cart-summary">
+        <h1>Shopping Cart</h1>
+        <div class="shopping-cart">
+            
+            <div class="cart-list">
+                <div class="cart-item">
+                    <div class="cart-img">
+                        <img src="Homepage/images/1.png" alt="">
+                    </div>
+                    <div class="name-produc">normal watch</div>
+                    <div class="name-produc">accerssory</div>
+                    <div class="product-price">$500</div>
+
+                    <div class="cart-delete">
+                        <i class='bx bxs-message-square-x'></i>
+                    </div>
+
+                    
+                </div>
+                <div class="cart-item">
+                    <div class="cart-img">
+                        <img src="Homepage/images/2.png" alt="">
+                    </div>
+                    <div class="name-produc">digital watch</div>
+                    <div class="name-produc">accessory</div>
+                    <div class="product-price">$999</div>
+                    <div class="cart-delete">
+                        <i class='bx bxs-message-square-x'></i>
+                    </div>
+
+                    
+                </div>
+                <div class="total-item">
+                    <span>total: </span>
+                    <span class="value-total"> $1499</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <div class="cart-wrapper" id="cart-page">
+        
+        <div class="container">
+            <form action="">
+                <h1>
+                    <i class="fas fa-shipping-fast"></i>
+                    Shipping Details
+                </h1>
+                <div class="name">
+                    <div>
+                        <label for="f-name">First</label>
+                        <input type="text" name="f-name">
+                    </div>
+                    <div>
+                        <label for="l-name">Last</label>
+                        <input type="text" name="l-name">
+                    </div>
+                </div>
+                <div class="street">
+                    <label for="name">Street</label>
+                    <input type="text" name="address">
+                </div>
+                <div class="address-info">
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="city">
+                    </div>
+                    <div>
+                        <label for="state">State</label>
+                        <input type="text" name="state">
+                    </div>
+                    <div>
+                        <label for="zip">Zip</label>
+                        <input type="text" name="zip">
+                    </div>
+                </div>
+                <h1>
+                    <i class="far fa-credit-card"></i> Payment Information
+                </h1>
+                <div class="cc-num">
+                    <label for="card-num">Telebirr Number</label>
+                    <input type="text" name="card-num">
+                </div>
+                <div class="cc-info">
+                    <div>
+                        <label for="card-num">Account Holder Name</label>
+                        <input type="text" name="expire">
+                    </div>
+                    <div>
+                        <label for="card-num">Password</label>
+                        <input type="text" name="security">
+                    </div>
+                </div>
+                <div class="btns">
+                    <button>Purchase</button>
+                    <button id="back_toPurchase">Back to cart</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+
+        // addEventListener('DOMContentLoaded', ()=> {
+        //     const container = document.getElementById("product-listing")
+        //     const buy_btn = document.querySelectorAll('.buy_now')
+        //     console.log(container)
+        // })
+    </script>
 </body>
 
 </html>
