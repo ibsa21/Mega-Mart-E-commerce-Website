@@ -56,7 +56,7 @@ sellerLogin_form.addEventListener('submit', (e)=> {
 
     if (isFound)
      {
-      window.wq.href="http:
+      window.location.href="SellerPage\index.html"
      }
   else
     alert("Incorrect, login information")
