@@ -1,4 +1,4 @@
-![JUJJJ](https://user-images.githubusercontent.com/62568756/155706043-5242382c-079e-4939-9c17-c67883c523dc.png)
+#checkout the demo website: https://infallible-thompson-3d2319.netlify.app
 
 #Project description
 MegaMart is a electronic commerce which allows consumers to directly buy goods or
