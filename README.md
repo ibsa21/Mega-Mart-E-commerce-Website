@@ -18,3 +18,4 @@ The other thing that is special about the project is that we will have a verific
 system for sellers and buyers to guarantee that the products are safe and good.
 And also we have a convenient payment system that is easily rechargeable and no need to enter shipping
 address and payment card information all the time when buying products.
+[dfd_tree_table.pdf](https://github.com/AASTU-IP-SBG5/Mega-Mart-E-commerce-Website/files/8140657/dfd_tree_table.pdf)
