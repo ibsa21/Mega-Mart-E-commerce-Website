@@ -29,7 +29,7 @@ function toggle_displays(display_visible, display_none) {
     display_none.style.display = "none";
   }
 
-  function validate_login(DataContainer, username, password) {
+  function validateLogin(DataContainer, username, password) {
     let isFound  =  false;
     
     for (var i = 0; i < DataContainer.length; i++) {
@@ -43,4 +43,4 @@ function toggle_displays(display_visible, display_none) {
 
   }
 
-export {user_data, load_dataFromLS, push_data, toggle_displays, text, validate_login};
+export {user_data, load_dataFromLS, push_data, toggle_displays, text, validateLogin};

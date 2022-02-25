@@ -1,4 +1,4 @@
-import {user_data, load_dataFromLS, push_data, toggle_displays, text, validate_login} from './Module.js';
+import {user_data, load_dataFromLS, push_data, toggle_displays, text, validateLogin} from './Module.js';
 
 
 const f_name = document.getElementById('fName');
@@ -52,7 +52,7 @@ change_toSellerSignup.addEventListener('click', ()=> {
 sellerLogin_form.addEventListener('submit', (e)=> {
     e.preventDefault();
 
-    let isFound = validate_login(sellerAccount, username_login.value, password_login.value);
+    let isFound = validateLogin(sellerAccount, username_login.value, password_login.value);
 
     if (isFound)
      {

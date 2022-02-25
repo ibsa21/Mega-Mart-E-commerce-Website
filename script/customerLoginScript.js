@@ -21,13 +21,11 @@ console.log(signup_container, login_container)
 const change_toLogin = document.querySelectorAll('.navigate_login');
 const change_tosignup = document.getElementById('navigate_signup');
 
-console.log(text)
 // select form
 const login_form = document.getElementById('login_form');
 const signup_form = document.getElementById('signup_form');
 
 let customerAccount = [];
-let customer_counter;
 window.onload = function () {
   customerAccount = load_dataFromLS('CustomerAccount', customerAccount);
 }
