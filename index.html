@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEGA MART</title>
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/home.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/cart.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <header class="myHeader">
+            <!-- Header top-->
+            <div class="header-top">
+                <div class="logo">
+                    <img src="Homepage/images/logomart-bgremove.png" alt="logo of mega mart" id="logo" />
+                </div>
+                <div class="search">
+                    <input type="type" placeholder="Search..." id="search" list="productType" />
+                    <datalist name="" id="productType">
+                        <option value="cloth"></option>
+                        <option value="electronics"></option>
+                        <option value="game"></option>
+                        <option value="gate"></option>
+                        <option value="cake"></option>
+                        <option value="suit"></option>
+                        <option value="sport"></option>
+                    </datalist>
+                    <select name="list" id="drop-down">
+                        <optgroup label="sport">
+                            <option value="">football</option>
+                            <option value="">jersey</option>
+                            <option value="">tickets</option>
+                            <option value="">pictures</option>
+                            <option value="">pack</option>
+                        </optgroup>
+                        <optgroup label="health">
+                            <option value="">medicine</option>
+                            <option value="">vitamins</option>
+                            <option value="">supplements</option>
+                            <option value="">deit</option>
+                            <option value="">books</option>
+                        </optgroup>
+                        <optgroup label="cloth">
+                            <option value="">suit</option>
+                            <option value="">ladies</option>
+                            <option value="">gentlemen</option>
+                        </optgroup>
+                        <optgroup label="electronics">
+                            <option value="">phone</option>
+                            <option value="">tablet</option>
+                            <option value="">pc</option>
+                            <option value="">ipad</option>
+                            <option value="">gaming</option>
+                        </optgroup>
+                        <optgroup label="entertainment">
+                            <option value="">show</option>
+                            <option value="">movies</option>
+                            <option value="">tv series</option>
+                            <option value="">blockbuster</option>
+                            <option value="">comedey</option>
+                        </optgroup>
+                    </select>
+
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <!-- Header top right icons-->
+                <div class="signup">
+                    <div class="sign-up">
+                        <a href="SellerHomePage/seller.html" style="color: white;"><button> <span>Seller</span></a>
+                        </button>
+                        <a href="LoginSignUp/customerLogin.html" style="color: white;"><button> <span>Sign up</span></a>
+                        </button>
+                    </div>
+                    <div class="cart-icon">
+                        <div class="cart-icon-number"></div>
+                        <i class="fa fa-shopping-cart" id="cartimg"></i>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <nav class="navigation" >
+
+            <div class="all-catagory nav-btn">
+                <!-- <a href="#">all category</a> -->
+                <span>All catagory</span>
+                <div class="icon">
+                    <i class="fas fa-angle-double-down"></i>
+                </div>
+            </div>
+            <div class="customer-btn nav-btn">
+
+                <i class="fas fa-headset"></i>
+                <a href="Blog/coupons.html" style="color: white;"><span>couponss</span></a>
+            </div>
+            <div class="coupon-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+
+                <a href="Blog/blog.html" style="color: white;"><span>seller</span></a>
+            </div>
+            <div class="help-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+
+                <a href="AbouUs/faq.html" style="color: white;"><span>FAQ</span></a>
+            </div>
+            <div class="location-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+
+                <a href="Blog/blog.html" style="color: white;"><span>location</span></a>
+            </div>
+            <div class="currency-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-coins"></i>
+                </div>
+
+                <a href="Blog/blog.html" style="color: white;"><span>support</span></a>
+            </div>
+            <div class="currency-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <a href="Blog/blog.html" style="color: white;"><span>Delivery</span></a>
+            </div>
+            <div class="currency-btn nav-btn">
+                <div class="icon">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <a href="Blog/blog.html" style="color: white;"><span>Blog</span></a>
+            </div>
+
+
+
+        </nav>
+        
+        <main>
+
+            <div class="banner">
+                <div class="product">
+                </div>
+            </div>
+
+
+            <div class="product-catagory">
+                <div class="catagory-head-top">
+                    <h2 id="cat">Catagories</h2>
+                    <p id="add">
+                        <span class="slide-icon">&#139;</span>
+                        <span class="slide-icon">&#155;</span>
+                    </p>
+                </div>
+
+                <div class="product-list-top">
+                    <div class="product-detail-top">
+                        <picture class="product-img">
+                            <img src="Homepage/images/nokia.png" alt="">
+                        </picture>
+                            <div class="catagory-name">
+                                <a href="Homepage/catagory.html" >Electronics</a>
+                            </div>
+                    </div>
+                    <div class="product-detail-top">
+                        <picture class="product-img">
+                            <img src="Homepage/images/suit.jpg" alt="">
+                        </picture>
+                        <div class="catagory-name">
+                            <a href="Homepage/catagory.html" >Cloth</a>
+                        </div>
+
+                    </div>
+                    <div class="product-detail-top">
+                        <picture class="product-img">
+                            <img src="Homepage/images/furniture1.jpg" alt="">
+                        </picture>
+                        <div class="catagory-name">
+                            <a href="Homepage/catagory.html" >Furniture</a>
+                        </div>
+
+                    </div>
+                    <div class="product-detail-top">
+                        <picture class="product-img">
+                            <img src="Homepage/images/baby.jfif" alt="">
+                        </picture>
+                        <div class="catagory-name">
+                            <a href="Homepage/catagory.html" >Baby Products</a>
+                        </div>
+
+                    </div>
+                    <div class="product-detail-top">
+                        <picture class="product-img">
+                            <img src="Homepage/images/feature_3.png" alt="">
+                        </picture>
+                        <div class="catagory-name">
+                            <a href="Homepage/catagory.html" >Shoes</a>
+                        </div>
+
+                    </div>
+                    <div class="product-detail-top">
+                        <picture class="product-img">
+                            <img src="Homepage/images/watch.png" alt="">
+                        </picture>
+                        <div class="catagory-name">
+                            <a href="Homepage/catagory.html" >Watch</a>
+                        </div>
+
+                    </div>
+                    <div class="product-detail-top">
+                        <picture class="product-img">
+                            <img src="Homepage/images/grocery.jfif" alt="">
+                        </picture>
+                        <div class="catagory-name">
+                            <a href="Homepage/catagory.html" >Grocery</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-catagory">
+
+                <div class="catagory-head">
+                    <h2 id="cat">Trending products</h2>
+                    <p id="add">
+                        <span class="slide-icon">&#139;</span>
+                        <span class="slide-icon">&#155;</span>
+                    </p>
+                </div>
+
+                <div class="product-list">
+                    <div class="second">
+                        <picture class="product-img">
+                            <img src="Homepage/images/1.png" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <picture class="product-img">
+                            <img src="Homepage/images/5.png" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <picture class="product-img">
+                            <img src="Homepage/images/11.png" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <picture class="product-img">
+                            <img src="Homepage/images/6.png" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <picture class="product-img">
+                            <img src="Homepage/images/banner2.png" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <picture class="product-img">
+                            <img src="Homepage/images/wearables.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <picture class="product-img">
+                            <img src="Homepage/images/smartTv.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <picture class="product-img">
+                            <img src="Homepage/images/t-shirts-img.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <picture class="product-img">
+                            <img src="Homepage/images/suit.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <!-- ************************************************* -->
+                    <div class="second">
+                        <picture class="product-img">
+                            <img src="Homepage/images/2.png" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product-catagory reccomendation">
+                <div class="catagory-head">
+                    <h2 id="cat">Recommendation</h2>
+                    <p id="add">
+                        <span class="slide-icon">&#139;</span>
+                        <span class="slide-icon">&#155;</span>
+                    </p>
+                </div>
+                <div class="product-list">
+                    <div class="third">
+                        <picture class="product-img">
+                            <img src="Homepage/images/suit.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <picture class="product-img">
+                            <img src="Homepage/images/954_generated.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <picture class="product-img">
+                            <img src="Homepage/images/one.png" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <picture class="product-img">
+                            <img src="Homepage/images/3.png" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <picture class="product-img">
+                            <img src="Homepage/images/banner3.png" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <picture class="product-img">
+                            <img src="Homepage/images/laptopwhite.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <picture class="product-img">
+                            <img src="Homepage/images/250.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <picture class="product-img">
+                            <img src="Homepage/images/Project_182-04_generated.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="third">
+                        <picture class="product-img">
+                            <img src="Homepage/images/suit.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <!-- ************************************************* -->
+                    <div class="third">
+                        <picture class="product-img">
+                            <img src="Homepage/images/suit.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-catagory hot_deals">
+                <div class="catagory-head">
+                    <h2 id="cat">Hot Deals</h2>
+                    <p id="add">
+                        <span class="slide-icon">&#139;</span>
+                        <span class="slide-icon">&#155;</span>
+                    </p>
+                </div>
+                <div class="product-list">
+                    <div class="fourth">
+                        <picture class="product-img">
+                            <img src="Homepage/images/watch.png" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="fourth">
+                        <picture class="product-img">
+                            <img src="Homepage/images/grocery.jfif" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="fourth">
+                        <picture class="product-img">
+                            <img src="Homepage/images/nokia-air.png" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="fourth">
+                        <picture class="product-img">
+                            <img src="Homepage/images/Laptops/macos.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="fourth">
+                        <picture class="product-img">
+                            <img src="Homepage/images/Phones/iphonex.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="fourth">
+                        <picture class="product-img">
+                            <img src="Homepage/images/printerScanner.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="fourth">
+                        <picture class="product-img">
+                            <img src="Homepage/images/suit.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="fourth">
+                        <picture class="product-img">
+                            <img src="Homepage/images/banner3.png" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <div class="fourth">
+                        <picture class="product-img">
+                            <img src="Homepage/images/suit.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+                    <!-- ************************************************* -->
+                    <div class="fourth">
+                        <picture class="product-img">
+                            <img src="Homepage/images/suit.jpg" alt="">
+                        </picture>
+                        <div class="details">
+
+                            <div class="icon-col">
+                                <span><i class="far fa-heart"></i></span>
+                                <span><i class="far fa-share-square"></i></span>
+
+                            </div>
+                            <div class="product-name">
+                                <span>Ambassador</span>
+                            </div>
+                            <div class="product-make">
+                                <span>Cloth</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                4.5
+                            </div>
+                            <div class="product-price">
+                                <span>$499.99</span>
+                            </div>
+                            <!-- <div><button class="add-cart">Add to Cart</button></div> -->
+
+                        </div>
+                        <div class="buy-btn">
+                            <button class="buy_now"><span class="add-cart">BUY NOW</span></button><br>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="subscription">
+                <div class="parent-wrapper">
+                    <div class="subscribe-wrapper">
+                        <h4>SUBSCRIBE TO OUR NEWSLETTER and BLOG</h4>
+                        <input type="email" name="email" class="subscribe-input" placeholder="Your e-mail">
+                        <div class="submit-btn">SUBMIT</div>
+                    </div>
+                </div>
+                <div class="sub-social">
+                    <div class="story">
+                        <h2>MEGAMART</h2>
+                        <h4>our story</h4>
+                        <p>this project started as group prohject for internet programming course and we have grown to
+                            love our work and belive that we can solve the ecommerce problem in our country </p><br>
+                    </div>
+                    <div>
+                        <h4>You can find follow us on our social media for latest news</h4>
+                    </div>
+                    <div class="social-icons">
+                        <div class="facebook">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="linked-in">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="sub-social-icons">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div class="social">
+                <div class="call">
+                    <i class="fas fa-phone"></i>
+                    <span>CALL US</span>
+                    <p>+25199485769</p>
+                </div>
+                <div class="call">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>LOCATE US</span>
+                    <p>Addis Ababa science and technology university</p>
+                </div>
+                <div class="call">
+                    <i class="far fa-envelope-open"></i>
+                    <span>SEND US EMAIL</span>
+                    <p>store@megamart.com</p>
+                </div>
+
+            </div>
+
+            <div class="grid-foot">
+                <div class="foot foot-1">
+                    <div class="foot-head">
+                        help
+                    </div>
+                    <ul>
+                        <li>how to create account</li>
+                        <li>how to set a price </li>
+                        <li>community forum</li>
+                        <li>megamrt blog</li>
+                        <li>marketplace</li>
+                        <li>learn</li>
+                    </ul>
+                </div>
+                <div class="foot foot-2">
+                    <div class="foot-head">
+                        company
+                    </div>
+                    <ul>
+                        <li>privacy policy</li>
+                        <li>Terms of service</li>
+                        <li>cookie policy</li>
+                        <li>About us</li>
+                        <li>values</li>
+                        <li>legal</li>
+                    </ul>
+                </div>
+                <div class="foot foot-3">
+                    <div class="foot-head">
+                        services
+                    </div>
+                    <ul>
+                        <li>Advertise yoour product</li>
+                        <li>sell your products</li>
+                        <li>delivery</li>
+                        <li>shipping tracking</li>
+                        <li>lates business news</li>
+                        <li>GET a job</li>
+                    </ul>
+                </div>
+                <div class="foot foot-4">
+                    <div class="foot-head">
+                        Get started
+                    </div>
+                    <ul>
+                        <li>pricing</li>
+                        <li>resources</li>
+                        <li>opeinig account as a seller</li>
+                        <li>opeinig account as a user</li>
+                        <li>Referall programs</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="foot foot-5">
+                    <div class="foot-head">
+                        payment information
+                    </div>
+                    <ul>
+                        <li>megamart Business Card</li>
+                        <li>telebirr</li>
+                        <li>CBE birr</li>
+                        <li>Amole</li>
+                        <li>coupons</li>
+                        <li>megamart currency converter</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="foot-bottom">
+                All righ reserved &copy; 2022. MEGAMART
+            </div>
+
+        </footer>
+    </div>
+
+    <main class="cart" id="cart-summary">
+        <h1>Shopping Cart</h1>
+        <div class="shopping-cart">
+            
+            <div class="cart-list">
+                <div class="cart-item">
+                    <div class="cart-img">
+                        <img src="Homepage/images/1.png" alt="">
+                    </div>
+                    <div class="name-produc">normal watch</div>
+                    <div class="name-produc">accerssory</div>
+                    <div class="product-price">$500</div>
+
+                    <div class="cart-delete">
+                        <i class='bx bxs-message-square-x'></i>
+                    </div>
+
+                    
+                </div>
+                <div class="cart-item">
+                    <div class="cart-img">
+                        <img src="Homepage/images/2.png" alt="">
+                    </div>
+                    <div class="name-produc">digital watch</div>
+                    <div class="name-produc">accessory</div>
+                    <div class="product-price">$999</div>
+                    <div class="cart-delete">
+                        <i class='bx bxs-message-square-x'></i>
+                    </div>
+
+                    
+                </div>
+                <div class="total-item">
+                    <span>total: </span>
+                    <span class="value-total"> $1499</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <div class="cart-wrapper" id="cart-page">
+        
+        <div class="container">
+            <form action="">
+                <h1>
+                    <i class="fas fa-shipping-fast"></i>
+                    Shipping Details
+                </h1>
+                <div class="name">
+                    <div>
+                        <label for="f-name">First</label>
+                        <input type="text" name="f-name">
+                    </div>
+                    <div>
+                        <label for="l-name">Last</label>
+                        <input type="text" name="l-name">
+                    </div>
+                </div>
+                <div class="street">
+                    <label for="name">Street</label>
+                    <input type="text" name="address">
+                </div>
+                <div class="address-info">
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="city">
+                    </div>
+                    <div>
+                        <label for="state">State</label>
+                        <input type="text" name="state">
+                    </div>
+                    <div>
+                        <label for="zip">Zip</label>
+                        <input type="text" name="zip">
+                    </div>
+                </div>
+                <h1>
+                    <i class="far fa-credit-card"></i> Payment Information
+                </h1>
+                <div class="cc-num">
+                    <label for="card-num">Telebirr Number</label>
+                    <input type="text" name="card-num">
+                </div>
+                <div class="cc-info">
+                    <div>
+                        <label for="card-num">Account Holder Name</label>
+                        <input type="text" name="expire">
+                    </div>
+                    <div>
+                        <label for="card-num">Password</label>
+                        <input type="text" name="security">
+                    </div>
+                </div>
+                <div class="btns">
+                    <button>Purchase</button>
+                    <button id="back_toPurchase">Back to cart</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script/home.js"></script>
+    <script>
+        const button = document.querySelectorAll('.buy_now')
+        const container = document.getElementById('container')
+        const cart_container = document.getElementById('cart-page')
+        const back_button = document.getElementById('back_toPurchase')
+        const cart_summary = document.getElementById('cart-summary')
+
+        button.forEach((btn) => btn.addEventListener('click', () => {
+            cart_container.style.display = "flex";
+            container.style.display = "none";
+            cart_summary.style.display = "block"
+        }))
+
+        back_button.addEventListener('click', ()=> {
+            cart_container.style.display = "none";
+            cart_summary.style.display = "none";
+            container.style.display = "grid";
+        })
+    </script>
+</body>
+
+</html>
