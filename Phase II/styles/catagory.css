@@ -3,8 +3,6 @@
 }
 main {
     background-color: #f8f9fa;
-    /* background-color: rgb(236, 236, 236); */
-
 }
 main h1 {
     padding: 10px 60px;
@@ -37,7 +35,7 @@ main h1 {
     padding: 20px;
     outline: none;
     border-radius: 5px;
-    /* background-color: rgb(31 41 55); */
+   
 }
 .drop-down {
     padding: 12px;

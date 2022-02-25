@@ -1,4 +1,4 @@
-// select all neccessary tags 
+
 const shrinkBtn = document.querySelector(".shrink-btn");
 const search = document.querySelector(".search");
 const sidebar_links = document.querySelectorAll(".sidebar-links a");
@@ -11,7 +11,7 @@ const sidebar = document.getElementById('sidebar')
 const body = document.querySelector('b')
 const main = document.querySelector('a')
 
-//select tab element
+
 const dashboard = document.getElementById('zero');
 const product_container = document.getElementById('one');
 const order_info = document.getElementById('two');
@@ -40,7 +40,7 @@ shrinkBtn.addEventListener("click", () => {
   document.body.classList.toggle("shrink");
   setTimeout(style_activeTab, 400);
   shrinkBtn.classList.add("hovered");
-  // arrow function
+
   setTimeout(() => shrinkBtn.classList.remove("hovered"), 500);
 });
 
@@ -50,7 +50,7 @@ search.addEventListener("click", () => {
   search.lastElementChild.focus();
 });
 
-//changes styling of tabs when status active is changed
+
 function style_activeTab() {
   let from_top = activeIndex * 58 + 2.5;
   active_tab.style.top = `${from_top}px`;
@@ -65,7 +65,7 @@ function changeLink() {
 
 
   old_tab = activeIndex;
-  if(old_tab==undefined)
+  if (old_tab == undefined)
     old_tab = 0
   activeIndex = this.dataset.active;
 
@@ -73,10 +73,10 @@ function changeLink() {
   style_activeTab();
 }
 
-// when sidebar links are clicked change the styling
+
 sidebar_links.forEach((link) => link.addEventListener("click", changeLink));
 
-// for each link elements
+
 function showListStyle() {
   let tooltip = this.parentNode.lastElementChild;
   let spans = tooltip.children;
@@ -94,8 +94,8 @@ list_elements.forEach((elem) => {
 
 function change_tab(old_tab, activeIndex) {
   console.log("hello")
-  if (activeIndex !=old_tab) {
-    //removing the old tab from display
+  if (activeIndex != old_tab) {
+
     if (old_tab == 0)
       dashboard.style.display = "none";
     else if (old_tab == 1)
@@ -103,7 +103,7 @@ function change_tab(old_tab, activeIndex) {
     else if (old_tab == 2)
       order_info.style.display = "none"
 
-    // displaying new tab
+
     if (activeIndex == 0)
       dashboard.style.display = "block";
     else if (activeIndex == 1)
@@ -112,8 +112,7 @@ function change_tab(old_tab, activeIndex) {
       order_info.style.display = "block"
     else if (activeIndex == 3)
       add_product.style.display = "block"
-  }  
+  }
 }
 
-// show add product page
-add_product_link.addEventListener('click', ()=> { change_tab(1, 3) });
+add_product_link.addEventListener('click', () => { change_tab(1, 3) });

@@ -1,27 +1,26 @@
 import {user_data, load_dataFromLS, push_data, toggle_displays, text, validate_login} from './Module.js';
 
-// select signup info of seller
+
 const f_name = document.getElementById('fName');
 const l_name = document.getElementById('lName');
 const email = document.getElementById('email');
 const mobile_num = document.getElementById('phoneNum1');
 const username = document.getElementById('uName');
 const password = document.getElementById('password')
-console.log(text)
-//select container
+
 const seller_loginContainer = document.getElementById('SellerLogin-container')
 const seller_signupContainer = document.getElementById('seller_registration-container');
 
-// change layout selector
+
 const change_toSellerLogin = document.querySelectorAll('.navigate_seller_login')
 console.log(change_toSellerLogin)
 const change_toSellerSignup = document.getElementById('navigate_seller_signup')
 
-// select form
+
 const sellerLogin_form = document.getElementById('SellerLogin_form');
 const seller_registration = document.getElementById('SellerSignup_form');
 
-// select login data
+
 const username_login = document.getElementById('username_login');
 const password_login = document.getElementById('password_login');
 
@@ -57,7 +56,7 @@ sellerLogin_form.addEventListener('submit', (e)=> {
 
     if (isFound)
      {
-      window.location.href="http://127.0.0.1:5501/Phase%20II/SellerPage/index.html"
+      window.wq.href="http:
      }
   else
     alert("Incorrect, login information")

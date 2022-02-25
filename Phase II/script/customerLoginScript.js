@@ -17,7 +17,7 @@ const signup_container = document.getElementById('registration');
 const login_container = document.getElementById('login-container');
 console.log(signup_container, login_container)
 
-// change layout selector
+// layout selector
 const change_toLogin = document.querySelectorAll('.navigate_login');
 const change_tosignup = document.getElementById('navigate_signup');
 
@@ -69,7 +69,6 @@ function validateForm() {
   y = x[currentTab].getElementsByTagName("input");
 
   for (i = 0; i < y.length; i++) {
-    // If a field is empty...
     if (y[i].value == "") {
 
       y[i].className += " invalid";

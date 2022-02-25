@@ -15,7 +15,6 @@ function loadJSON() {
     .then((data) => {
       let html = "";
       data.forEach((product) => {
-        // console.log(products);
         html += `
         <div class="listing-item">
         <picture class="product-img">

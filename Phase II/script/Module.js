@@ -11,7 +11,6 @@ function load_dataFromLS(key, DataContainer) {
 
     let getData = [];
     getData = JSON.parse(localStorage.getItem(key));
-
     if (getData != null)
         DataContainer = getData;
 

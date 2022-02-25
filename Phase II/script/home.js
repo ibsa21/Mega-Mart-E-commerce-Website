@@ -9,7 +9,7 @@ for (let i in addToCart) {
 }
 
 function setCartCounter(totalCount) {
-  // cart-item-number
+  
   document.querySelector(".cart-icon-number").innerText = totalCount;
 }
 
@@ -55,12 +55,7 @@ function left_mover() {
     }
   }
 }
-// spanSlide[1].onclick = () => {
-//   right_mover();
-// };
-// spanSlide[0].onclick = () => {
-//   left_mover();
-// };
+
 let s = 0;
 let movePer2 = 20;
 let maxMove2 = 50;
@@ -88,7 +83,7 @@ function left_mover2() {
     }
   }
 }
-//slide 3
+
 let productSec3 = document.getElementsByClassName("third");
 let product_page_sec3 = Math.ceil(productSec3.length / 2);
 let z = 0;
@@ -118,7 +113,7 @@ function left_mover3() {
     }
   }
 }
-//slide 4
+
 let productSec4 = document.getElementsByClassName("fourth");
 let product_page_sec4 = Math.ceil(productSec4.length / 2);
 let y = 0;
