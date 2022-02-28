@@ -1,6 +1,6 @@
 import {user_data, load_dataFromLS, push_data, toggle_displays, text, validateLogin} from './Module.js';
 
-
+// select form
 const f_name = document.getElementById('fName');
 const l_name = document.getElementById('lName');
 const email = document.getElementById('email');
@@ -8,19 +8,20 @@ const mobile_num = document.getElementById('phoneNum1');
 const username = document.getElementById('uName');
 const password = document.getElementById('password')
 
+// select form container
 const seller_loginContainer = document.getElementById('SellerLogin-container')
 const seller_signupContainer = document.getElementById('seller_registration-container');
 
-
+// select swap button
 const change_toSellerLogin = document.querySelectorAll('.navigate_seller_login')
 console.log(change_toSellerLogin)
 const change_toSellerSignup = document.getElementById('navigate_seller_signup')
 
-
+// select form signup
 const sellerLogin_form = document.getElementById('SellerLogin_form');
 const seller_registration = document.getElementById('SellerSignup_form');
 
-
+// select login information
 const username_login = document.getElementById('username_login');
 const password_login = document.getElementById('password_login');
 
@@ -56,7 +57,7 @@ sellerLogin_form.addEventListener('submit', (e)=> {
 
     if (isFound)
      {
-      window.location.href="SellerPage\index.html"
+      window.location.href="Pages\SellerPage\index.html"
      }
   else
     alert("Incorrect, login information")
